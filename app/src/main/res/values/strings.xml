@@ -17,8 +17,8 @@
     <string name="btnAdicionar">Adicionar</string>
     <string name="btnAlterar">Alterar</string>
     <string name="btnExcluir">Excluir</string>
-    <string name="title_activity_lista_eleitor">ListaEleitor</string>
-    <string name="title_activity_lista_candidato">ListaCandidato</string>
+    <string name="title_act_eleitores">Eleitores</string>
+    <string name="title_act_candidatos">Candidatos</string>
 
 
 </resources>
