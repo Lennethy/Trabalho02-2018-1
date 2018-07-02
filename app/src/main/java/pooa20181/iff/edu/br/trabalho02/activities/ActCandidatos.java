@@ -1,20 +1,20 @@
 package pooa20181.iff.edu.br.trabalho02.activities;
 
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-
 import java.util.List;
-
 import pooa20181.iff.edu.br.trabalho02.adapters.ClickRecyclerViewListener;
 import pooa20181.iff.edu.br.trabalho02.R;
-
+import pooa20181.iff.edu.br.trabalho02.adapters.AdapterCandidato;
 import pooa20181.iff.edu.br.trabalho02.models.Candidato;
 import io.realm.Realm;
+
 
 public class ActCandidatos extends AppCompatActivity implements ClickRecyclerViewListener {
 

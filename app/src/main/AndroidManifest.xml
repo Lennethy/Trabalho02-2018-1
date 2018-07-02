@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.ActCandidatos" />
-        <activity android:name=".activities.ActEleitores"></activity>
+        <activity android:name=".activities.ActEleitores" />
+        <activity android:name=".activities.ActEleitorPerfil" />
+        <activity android:name=".activities.ActCandidatoPerfil"></activity>
     </application>
 
 </manifest>

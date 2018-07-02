@@ -1,4 +1,3 @@
-
 package pooa20181.iff.edu.br.trabalho02.activities;
 
 import android.content.Intent;
@@ -11,11 +10,10 @@ import android.widget.ListView;
 
 import pooa20181.iff.edu.br.trabalho02.R;
 
-public class ActMain extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class ActMain extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
-    private String[] activities = {"ActCandidatos", "Eleitores"};
-    private String[] itemMenu = {"Candidato", "Eleitor"};
-
+    private String[] activities = {"ActCandidatos","ActEleitores"};
+    private String[] itemMenu = {"Candidatos","Eleitores"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +21,7 @@ public class ActMain extends AppCompatActivity implements AdapterView.OnItemClic
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, itemMenu);
 
-        ListView listView = (ListView) findViewById(R.id.listaMenu);
+        ListView listView = (ListView)findViewById(R.id.listaMenu);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
 
@@ -35,7 +33,7 @@ public class ActMain extends AppCompatActivity implements AdapterView.OnItemClic
         Intent intent = null;
 
         try {
-            Class obj = Class.forName("pooa20181.iff.edu.br.trabalho02.activity." + activities[position]);
+            Class obj =    Class.forName("pooa20181.iff.edu.br.trabalho02.activities." + activities[position]);
             intent = new Intent(this, obj);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
