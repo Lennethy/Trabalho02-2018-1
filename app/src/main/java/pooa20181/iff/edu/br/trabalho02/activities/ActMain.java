@@ -19,9 +19,9 @@ public class ActMain extends AppCompatActivity implements AdapterView.OnItemClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_main);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, itemMenu);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, itemMenu);
 
-        ListView listView = (ListView)findViewById(R.id.listaMenu);
+        ListView listView = findViewById(R.id.listaMenu);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
 
