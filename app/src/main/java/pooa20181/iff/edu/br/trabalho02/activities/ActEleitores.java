@@ -23,7 +23,7 @@ public class ActEleitores extends AppCompatActivity implements ClickRecyclerView
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_eleitor);
+        setContentView(R.layout.act_eleitores);
 
         realm = Realm.getDefaultInstance();
 
@@ -31,7 +31,7 @@ public class ActEleitores extends AppCompatActivity implements ClickRecyclerView
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ActEleitores.this, EleitorPerfil.class);
+                Intent intent = new Intent(ActEleitores.this, ActEleitorPerfil.class);
                 intent.putExtra("id", 0);
                 startActivity(intent);
             }
@@ -54,7 +54,7 @@ public class ActEleitores extends AppCompatActivity implements ClickRecyclerView
 
     public void onClick(Object object) {
         Eleitor eleitor = (Eleitor) object;
-        Intent intent = new Intent( ActEleitores.this, EleitorPerfil.class);
+        Intent intent = new Intent( ActEleitores.this, ActEleitorPerfil.class);
         intent.putExtra("id", eleitor.getId());
         startActivity(intent);
     }

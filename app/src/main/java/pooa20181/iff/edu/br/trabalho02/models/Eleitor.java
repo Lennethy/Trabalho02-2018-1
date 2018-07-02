@@ -101,4 +101,6 @@ public class Eleitor extends RealmObject implements Serializable {
         this.secao = secao;
     }
 
+    public Eleitor() {
+    }
 }

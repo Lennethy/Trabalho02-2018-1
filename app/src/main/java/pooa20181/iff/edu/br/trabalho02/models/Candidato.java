@@ -82,8 +82,7 @@ public class Candidato extends RealmObject implements Serializable {
         this.municipio = municipio;
     }
 
-    public Candidato(int id, String nome, String partido, String numUrna, String cargo)
-    {
+    public Candidato(int id, String nome, String partido, String numUrna, String cargo) {
         this.id = id;
         this.nome = nome;
         this.partido = partido;
@@ -92,8 +91,7 @@ public class Candidato extends RealmObject implements Serializable {
     }
 
     public Candidato(int id, String nome, String partido, String numUrna,
-                     String cargo, String estado, String numVotos, String municipio)
-    {
+                     String cargo, String estado, String numVotos, String municipio) {
         this.id = id;
         this.nome = nome;
         this.partido = partido;
@@ -103,5 +101,8 @@ public class Candidato extends RealmObject implements Serializable {
         this.numVotos = numVotos;
         this.municipio = municipio;
 
+    }
+
+    public Candidato() {
     }
 }

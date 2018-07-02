@@ -13,7 +13,7 @@ import pooa20181.iff.edu.br.trabalho02.R;
 
 public class ActMain extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    private String[] activities = {"Candidatos", "Eleitores"};
+    private String[] activities = {"ActCandidatos", "Eleitores"};
     private String[] itemMenu = {"Candidato", "Eleitor"};
 
     @Override
